@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>AnyChart PHP template</title>
-    <script src="https://cdn.anychart.com/js/latest/anychart-bundle.min.js"></script>
-    <script src="http://cdn.anychart.com/js/latest/data-adapter.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.anychart.com/css/latest/anychart-ui.min.css"/>
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-base.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-stock.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-ui.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-data-adapter.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-exports.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.0.0/js/anychart-vml.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.anychart.com/releases/8.0.0/css/anychart-ui.min.css">
+    <link rel="stylesheet" href="https://cdn.anychart.com/releases/8.0.0/fonts/css/anychart.min.css"/>
     <link rel="stylesheet" href="static/css/style.css"/>
 </head>
 <body>
@@ -19,7 +24,7 @@
         table.addData(data);
 
         // create mapping
-        var mapping = table.mapAs({x: 'x', value: 'value'});
+        var mapping = table.mapAs({'x': 'x', 'value': 'value'});
 
         var plot = chart.plot(0);
         // create area series on the first plot
@@ -50,5 +55,3 @@
 </script>
 </body>
 </html>
-
-
